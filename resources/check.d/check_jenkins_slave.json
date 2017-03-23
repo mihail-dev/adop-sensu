@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "check_jenkins_slave": {
+      "command": "${PLUGINS_DIR}/basic/check-container.rb -c jenkins-slave",
+      "handlers": [
+        "mailer"
+      ],
+      "subscribers": [
+        "jenkins_slave"
+      ],
+      "interval": 60
+    }
+  }
+}
