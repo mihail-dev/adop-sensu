@@ -4,8 +4,7 @@ FROM sstarcher/sensu:0.28.4
 RUN sed -i -r 's/EMBEDDED_RUBY=false/EMBEDDED_RUBY=true/' /etc/default/sensu
 
 # Install Mailer 2.5.4
-RUN /opt/sensu/embedded/bin/gem install mail --version 2.5.4
-RUN /opt/sensu/embedded/bin/gem install aws-ses
+RUN /opt/sensu/embedded/bin/gem install mail:2.5.4 aws-ses sensu-plugins-docker 
 
 # Bake config & checks in
 COPY resources/conf.d/* /etc/sensu/conf.d/
