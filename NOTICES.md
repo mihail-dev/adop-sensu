@@ -7,3 +7,4 @@ This project incorporates components from the projects listed below. The origina
 - sstarcher/sensu version "latest" (https://github.com/sstarcher/docker-sensu)
 - mail version "2.5.4" (https://github.com/mikel/mail/tree/2.5.4)
 - aws-ses version "latest" (https://github.com/drewblas/aws-ses)
+- sensu-plugins-docker "latest" (https://github.com/sensu-plugins/sensu-plugins-docker)
