@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "check_docker_daemon": {
+      "command": "${PLUGINS_DIR}/basic/check-procs.rb -C 1 -p dockerd",
+      "handlers": [
+        "mailer"
+      ],
+      "subscribers": [
+        "docker_daemon"
+      ],
+      "interval": 60
+    }
+  }
+}
